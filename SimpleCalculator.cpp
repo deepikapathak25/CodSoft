@@ -32,11 +32,11 @@ int main() {
     cout << "Enter first number: ";
     cin >> num1;
 
-    cout << "Enter an operator (+, -, *, /): ";
-    cin >> operatorChar;
-
     cout << "Enter second number: ";
     cin >> num2;
+
+    cout << "Enter an operator (+,-,*,/): ";
+    cin >> operatorChar;
 
     double result;
     switch (operatorChar) {
@@ -54,7 +54,7 @@ int main() {
             break;
         default:
             cout << "Invalid operator entered." << endl;
-            return 1; // Return 1 to indicate an error
+            return 1; 
     }
 
     cout << "Result: " << result << endl;
